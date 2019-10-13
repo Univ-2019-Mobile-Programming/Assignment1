@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignInActivity">
+
+    <EditText
+        android:id="@+id/sign_in_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/sign_in_password"
+        android:layout_marginStart="30dp"
+        android:layout_toStartOf="@id/button_sign_in"
+        android:hint="@string/username"
+        android:inputType="textEmailAddress"
+        android:maxLength="12" />
+
+    <EditText
+        android:id="@+id/sign_in_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="30dp"
+        android:layout_toStartOf="@id/button_sign_in"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:maxLength="20" />
+
+    <TextView
+        android:id="@+id/sign_in_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_toStartOf="@id/button_sign_in"
+        android:textColor="@color/light_red"
+        android:visibility="gone"
+        android:layout_below="@id/sign_in_password"/>
+
+    <Button
+        android:id="@+id/button_sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/sign_in_username"
+        android:layout_alignBottom="@id/sign_in_password"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="30dp"
+        android:background="@color/light_blue"
+        android:text="@string/sign_in" />
+
+    <Button
+        android:id="@+id/button_sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_sign_in"
+        android:layout_alignStart="@id/button_sign_in"
+        android:layout_alignEnd="@id/button_sign_in"
+        android:background="@android:color/transparent"
+        android:text="@string/sign_up" />
+</RelativeLayout>
