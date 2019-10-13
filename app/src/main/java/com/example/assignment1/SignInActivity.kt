@@ -35,7 +35,7 @@ class SignInActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
             sign_in_message.isVisible = false
-            Toast.makeText(applicationContext, "Hello, %s!".format(username), Toast.LENGTH_LONG).show()
+            Toast.makeText(applicationContext, "Hello, %s!".format(username), Toast.LENGTH_SHORT).show()
 
             intent.putExtra("username", username)
             startActivity(intent)

@@ -6,6 +6,7 @@
     <string name="password_hint">Between 9 and 20 characters</string>
     <string name="sign_in">Sign In</string>
     <string name="sign_up">Sign Up</string>
+    <string name="change">Change</string>
     <string name="cancel">Cancel</string>
     <string name="name">Name</string>
     <string name="name_hint">Person Name</string>

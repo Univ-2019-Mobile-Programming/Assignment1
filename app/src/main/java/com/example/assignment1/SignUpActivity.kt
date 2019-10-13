@@ -1,6 +1,7 @@
 package com.example.assignment1
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_sign_up.*
 
@@ -45,6 +46,7 @@ class SignUpActivity : AppCompatActivity() {
                 profileDB?.profileDao()?.insert(profile)
             })
             thread.start()
+            Toast.makeText(applicationContext, "Sign Up Success!", Toast.LENGTH_SHORT).show()
             finish()
         }
 
