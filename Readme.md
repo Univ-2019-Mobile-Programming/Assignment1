@@ -2,6 +2,7 @@
 
 - 학번 : 20181686
 - 이름 : 장병준
+- [Github Link](https://github.com/Univ-2019-Mobile-Programming/Assignment1)
 
 ## 테스트 환경
 
@@ -27,3 +28,18 @@
 3. 세번째 화면 (Grid Layout 사용)
     - 첫번째 페이지에서 ID, 비밀번호 입력 시 정상이고 로그인 버튼 클릭 시 화면 출력
     - 비밀번호 변경 페이지 및  회원 정보 페이지
+
+## 화면 구성 외의 기능 구현
+
+1. Profile.kt
+    - profile DB에 저장이 될 회원정보를 담는 class
+2. ProfileDao.kt
+    - profile DB의 DAO
+3. ProfileDB.kt
+    - profile DB의 Entity class
+4. ProfileVerify.kt
+    - username이 규칙을 따르는지 확인
+        - 최소 6문자, 알파벳, 숫자 지원
+    - password가 규칙을 따르는지 확인
+        - 최소 9문자, 알파벳, 숫자, 문자(!,@,#,$,%,^,&,*,(,),+) 지원
+    - 모든 EditText가 빈 필드인지 확인하며 규칙을 따르지 않는 경우 message를 표시
